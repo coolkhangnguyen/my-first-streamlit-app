@@ -7,6 +7,8 @@ if st.button('Predict'):
   x=np.array(x)
   result=model.predict(x.reshape(-1,1))
   st.caption('Revenue Prediction')
-  st.success(result)
+  ket_qua=result[0]
+  ket_qua=str(ket_qua)
+  st.success(ket_qua)
 
 
